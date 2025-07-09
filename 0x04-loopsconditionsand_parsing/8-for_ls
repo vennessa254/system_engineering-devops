@@ -1,0 +1,5 @@
+#!/bin/bash
+# Lists files showing part after first '-'
+for file in *; do
+  echo "${file#*-}"
+done
