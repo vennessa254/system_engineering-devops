@@ -1,5 +1,11 @@
-#!/bin/bash
-# Lists files showing part after first '-'
-for file in *; do
-  echo "${file#*-}"
+#!/usr/bin/env bash
+# This script displays the content of the current directory in list format, showing 
+only the part after the first dash
+
+for file in *
+do
+    if [[ "$file" != .* ]]
+    then
+        echo "${file#*-}"
+    fi
 done
