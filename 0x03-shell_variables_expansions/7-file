@@ -1,0 +1,4 @@
+#!/bin/bash
+# Create the filename using ASCII codes to avoid interpretation
+filename=$'\x5C\x2A\x5C\x5C\x27\x22Best School\x22\x27\x5C\x5C\x2A\x24\x3F\x2A\x2A\x2A\x2A\x2A\x3A\x29'
+echo "Best School" > "$filename"
