@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
-# Displays PIDs and names of processes containing 'bash' (without ps)
-
-pgrep -a bash
+#!/bin/bash
+# This will work for both bash and zsh on macOS
+ps -e | grep -E 'bash|zsh' | awk '{print $1, $4}'
